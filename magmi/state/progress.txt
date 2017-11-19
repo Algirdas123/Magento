@@ -1,0 +1,4 @@
+title:MAGMI by dweeves - version:0.7.22
+startup:Running Magmi Product Import Engine v1.9.1 by dweeves
+error:1:SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'magento' - 
+end:Import Ended

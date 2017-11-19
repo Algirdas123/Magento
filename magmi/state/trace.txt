@@ -1,0 +1,214 @@
+---- TRACE : 1 -----
+---- DATE : 2017-11-13 19:34:51 ------
+************************************
+SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'magento'
+*************************************
+\inc\dbhelper.class.php:58 - PDO->__construct
+----------------------------------------
+Array
+(
+    [0] => mysql:host=localhost;port=3306;dbname=magento;charset=utf8
+    [1] => 
+    [2] => 
+    [3] => Array
+        (
+            [1002] => SET NAMES utf8
+        )
+
+)
+
+\inc\magmi_engine.php:502 - DBHelper->initDb
+----------------------------------------
+Array
+(
+    [0] => localhost
+    [1] => magento
+    [2] => 
+    [3] => 
+    [4] => 3306
+    [5] => 
+    [6] => net
+    [7] => 
+)
+
+\inc\magmi_engine.php:445 - Magmi_Engine->connectToMagento
+----------------------------------------
+Array
+(
+)
+
+\cli\magmi.cli.php:123 - Magmi_Engine->run
+----------------------------------------
+Array
+(
+    [0] => Array
+        (
+            [chain] => 
+        )
+
+)
+
++++++++++++++++++++++++++++++
+CONTEXT DUMP
++++++++++++++++++++++++++++++
+Magmi_ProductImportEngine Object
+(
+    [attrinfo] => Array
+        (
+        )
+
+    [attrbytype] => Array
+        (
+        )
+
+    [attribute_sets] => 
+    [attribute_set_infos] => 
+    [prod_etype] => 
+    [default_asid] => 
+    [sidcache] => Array
+        (
+        )
+
+    [mode] => update
+    [_notattribs:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_attributehandlers:Magmi_ProductImportEngine:private] => 
+    [_current_row:Magmi_ProductImportEngine:private] => 
+    [_optidcache:Magmi_ProductImportEngine:private] => 
+    [_curitemids:Magmi_ProductImportEngine:private] => Array
+        (
+            [sku] => 
+        )
+
+    [_dstore:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_same:Magmi_ProductImportEngine:private] => 
+    [_extra_attrs:Magmi_ProductImportEngine:private] => 
+    [_profile:Magmi_ProductImportEngine:private] => 
+    [_sid_wsscope:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_sid_sscope:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_prodcols:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_stockcols:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_skustats:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_handlercache:Magmi_ProductImportEngine:private] => Array
+        (
+        )
+
+    [_conf:protected] => Magmi_Config Object
+        (
+            [_default:protected] => 1
+            [_basedir:protected] => C:\Users\Algirdas\Desktop\magento\magmi\conf
+            [_confname:protected] => C:\Users\Algirdas\Desktop\magento\magmi\conf\magmi.ini
+            [_props:protected] => 
+            [inifile] => C:\Users\Algirdas\Desktop\magento\magmi\conf\magmi.ini
+            [_specialchars:protected] => Array
+                (
+                    ["] => :DQUOTE:
+                    ['] => :SQUOTE:
+                    [\t] => TAB
+                )
+
+        )
+
+    [_initialized:protected] => 1
+    [_exceptions:protected] => Array
+        (
+            [SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'magento'] => Array
+                (
+                    [0] => 1
+                    [1] => 1
+                )
+
+        )
+
+    [tprefix] => 
+    [_connected:protected] => 
+    [_activeplugins:protected] => 
+    [_pluginclasses:protected] => 
+    [_builtinplugins:protected] => Array
+        (
+            [itemprocessors] => C:\Users\Algirdas\Desktop\magento\magmi/plugins/inc/magmi_defaultattributehandler.php::Magmi_DefaultAttributeItemProcessor
+        )
+
+    [_ploop_callbacks:protected] => Array
+        (
+        )
+
+    [_excid:Magmi_Engine:private] => 1
+    [logger] => FileLogger Object
+        (
+            [_fname:protected] => C:\Users\Algirdas\Desktop\magento\magmi\state\progress.txt
+        )
+
+    [_timingcats:protected] => Array
+        (
+        )
+
+    [_db:protected] => 
+    [_debug:protected] => 
+    [_laststmt:protected] => 
+    [_use_stmt_cache:protected] => 1
+    [_nreq:protected] => 
+    [_indbtime:protected] => 
+    [_intrans:protected] => 
+    [prepared:protected] => Array
+        (
+        )
+
+    [_timecounter:protected] => timecounter Object
+        (
+            [_timingcats:protected] => Array
+                (
+                    [db] => Array
+                        (
+                            [_counters] => Array
+                                (
+                                    [requests] => 0
+                                )
+
+                            [_timers] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [_defaultsrc:protected] => Magmi_ProductImportEngine
+            [_timingcontext:protected] => Array
+                (
+                )
+
+        )
+
+    [_tcats:protected] => db
+    [_tables2columns:protected] => Array
+        (
+        )
+
+    [_dbname:protected] => 
+)
+
++++++++++++++++++++++++++++++
+END CONTEXT DUMP
++++++++++++++++++++++++++++++
+---- ENDTRACE : 1 -----
