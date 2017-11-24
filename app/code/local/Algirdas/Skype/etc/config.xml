@@ -1,0 +1,49 @@
+<?xm version="1.0" ?>
+
+<config>
+
+    <modules>
+
+        <Algirdas_Skype>
+
+            <version>0.0.1</version>
+
+        </Algirdas_Skype>
+
+    </modules>
+
+    <global>
+
+        <blocks>
+
+            <skype>
+
+                <class>Algirdas_Skype_Block</class>
+
+            </skype>
+
+        </blocks>
+
+        <models>
+
+            <skype>
+
+                <class>Algirdas_Skype_Model</class>
+
+            </skype>
+
+        </models>
+
+        <helpers>
+
+            <skype>
+
+                <class>Algirdas_Skype_Helper</class>
+
+            </skype>
+
+        </helpers>
+
+    </global>
+
+</config>

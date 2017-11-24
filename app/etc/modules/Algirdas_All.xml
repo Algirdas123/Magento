@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+ <config>
+    <modules>
+        <Algirdas_Skype>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Algirdas_Skype>
+     </modules>
+ </config>

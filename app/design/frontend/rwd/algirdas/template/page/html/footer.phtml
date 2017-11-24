@@ -25,12 +25,12 @@
  */
 ?>
 <div class="footer-container">
-    <?php
-    if ($this->helper('customer')->isLoggedIn()) {
-        echo $this->getLayout()->createBlock('core/template')->setTemplate('template.phtml')->toHtml();
-    } ?>
 
     <div class="footer">
+        <?php
+        if ($this->helper('customer')->isLoggedIn()) {
+            echo $this->getLayout()->createBlock('core/template')->setTemplate('template.phtml')->toHtml();
+        } ?>
         <?php echo $this->getChildHtml() ?>
         <address class="copyright"><?php echo $this->getCopyright() ?></address>
     </div>

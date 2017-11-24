@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<config>
+    <tabs>
+        <skype_tab translate="label" module="skype">
+            <label>Skype</label>
+            <sort_order>8888</sort_order>
+        </skype_tab>
+       </tabs>
+
+      <sections>
+          <skype translate="label" module="skype">
+              <tab>skype_tab</tab>
+              <label>Settings</label>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+       <groups>
+           <skype_settings translate="label" module="skype">
+               <label>Settings</label>
+               <sort_order>1</sort_order>
+               <show_in_default>1</show_in_default>
+               <show_in_website>1</show_in_website>
+               <show_in_store>1</show_in_store>
+        <fields>
+            <skype_module_enable translate="label" module="skype">
+                 <label>Enable module</label>
+            <frontend_type>select</frontend_type>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <source_model>skype/options</source_model>
+          </skype_module_enable>
+            <skype_user_id translate="label" module="skype">
+                <label>Skype Name</label>
+                <frontend_type>text</frontend_type>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                </skype_user_id>
+            <skype_user_description translate="label" module="skype">
+                <label>Hobbies</label>
+                <frontend_type>textarea</frontend_type>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+             </skype_user_description>
+        </fields>
+            </skype_settings>
+           </groups>
+              </skype>
+          </sections>
+    </config>
